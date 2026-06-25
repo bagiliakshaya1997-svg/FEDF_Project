@@ -1,0 +1,122 @@
+@media (max-width: 980px) {
+    .hero,
+    .grid-section,
+    .risk-board,
+    .split-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 130px;
+    }
+
+    .section-shell {
+        padding-top: 84px;
+    }
+}
+
+@media (max-width: 760px) {
+    .navbar {
+        border-radius: 20px;
+        width: calc(100% - 28px);
+    }
+
+    .nav-toggle {
+        display: inline-flex;
+    }
+
+    .nav-links {
+        background: rgba(3, 10, 22, 0.94);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        display: none;
+        left: 0;
+        padding: 12px;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 10px);
+    }
+
+    .nav-links.open {
+        display: grid;
+    }
+
+    .nav-links a {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section-shell {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .search-row,
+    .footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .metric-strip,
+    .status-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .radar-card,
+    .status-card,
+    .risk-meter,
+    .recommendation-card,
+    .timeline,
+    .analytics-panel,
+    .alerts-panel,
+    .admin-form,
+    .lost-form,
+    .search-panel {
+        border-radius: 22px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 460px) {
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .meter-ring {
+        height: 148px;
+        width: 148px;
+    }
+
+    .meter-ring span {
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .feature-grid,
+    .dashboard-grid,
+    .page-risk-board {
+        grid-template-columns: 1fr;
+    }
+
+    .home-hero {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .page-header {
+        padding-top: 130px;
+    }
+
+    .home-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .module-card {
+        min-height: auto;
+    }
+}
